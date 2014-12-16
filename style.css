@@ -1,0 +1,464 @@
+/*
+ Theme Name:     Tau Beta Pi (Twenty Thirteen child theme)
+ Theme URI:      http://twentythirteendemo.wordpress.com/
+ Description:    Made for Stanford TBP 2014-2015
+ Author:         Boss, Raven
+ Author URI:     --
+ Template:       twentythirteen
+ Version:        1.0.0
+*/
+ 
+@import url("../twentythirteen/style.css");
+
+/* 
+ * Layout changes 
+ */
+
+.copyright-info {
+    margin: 0px auto;
+    max-width: 1040px;
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.entry-content,
+.entry-header,
+.entry-meta,
+.entry-summary {
+	margin: 0 auto;
+	max-width: 1040px;
+	width: 100%;
+}
+
+.entry-meta {
+	margin-bottom: 3em;
+}
+
+.hentry {
+	padding: 30px 20px;
+}
+
+.home-content {
+	padding: 0px !important;
+}
+
+.home-content .hentry {
+	padding: 50px 20px 0px;
+	padding-bottom: 1px;
+}
+
+.home-entry-img {
+	float: left;
+	margin-top: 25px;
+}
+
+.home-entry-header {
+	display: inline-block;
+}
+
+.home-entry-descrip {
+	margin-left: 170px;
+}
+
+.navbar {
+	height: 45px;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+
+.nav-menu .children,
+.nav-menu .sub-menu {
+	left: 0px;
+	border: 0px;
+}
+
+.site-info img {
+	max-width: 100%;
+}
+
+p.form-allowed-tags {
+	display: none;
+}
+
+header {
+	top: 0px;
+}
+
+/* Accounts for the menu bar */
+body {
+	margin-top: 45px;
+}
+
+body.logged-in, body.admin-bar {
+	margin-top: 13px !important;
+}
+
+body.home header.site-header {
+	height: 700px;
+	z-index: 1 !important;
+}
+
+body.home header.site-header .home-link {
+	text-align: center;
+	height: 100%;
+}
+
+body.home .site-title {
+	padding-top: 500px;
+}
+
+#home-dynamic-content {
+	margin: 25px 0px;
+	padding: 0px 20px;
+}
+
+#home-dynamic-content-wrapper {
+	max-width: 1040px;
+	margin: 0px auto;
+}
+
+#home-news {
+	float: left;
+	max-width: 700px;
+}
+
+#home-events {
+	float: right;
+}
+	
+
+#gce_widget-2 {
+	width: 300px;
+}
+
+#wpadminbar {
+	top: auto;
+	bottom: 0px;
+}
+
+#site-title-wrapper {
+	display: inline-block;
+	padding: 10px 10px 0px;
+}
+
+#site-description-wrapper {
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+}
+
+@media (max-width: 1040px) {
+	#home-events {
+		float: none;
+	}
+
+	#gce_widget-2 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 782px) {
+	.home-entry-img {
+		display: none;
+	}
+
+	.home-entry-descrip {
+		margin-left: 0px;
+	}
+
+	body.logged-in {
+		margin-top: -5px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	body.home header.site-header {
+		height: 350px;
+		background-size: 768px auto;
+	}
+
+	body.home header.site-header .home-link .site-title {
+		padding-top: 200px;
+	}
+
+	body.home #site-title-wrapper {
+		font-size: 60px;
+	}
+
+	#site-description-wrapper {
+		display: none;
+	}
+}
+
+@media (max-width: 643px) {
+	#content .entry-header, 
+	#content .entry-content {
+		padding: 0px;
+	}
+
+	#wpadminbar {
+		top: auto;
+		bottom: 0px;
+		position: fixed !important;
+	}
+}
+
+@media (max-width: 359px) {
+	body.home .site-header {
+		background-size: 360px auto;
+	}
+
+	body.home #site-title-wrapper {
+		font-size: 50px;
+	}
+
+	#site-title-wrapper {
+		font-weight: bold !important;
+	}
+
+	#wpadminbar {
+		top: auto !important;
+		bottom: 0px !important;
+	}
+}
+
+/*
+ * Clearfix 
+ * For floating 'Events' and 'Announcements' section
+ * on the home page.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+footer {
+	clear: both;
+}
+
+/* 
+ * Colors 
+ */ 
+
+a,
+a:hover,
+a:active,
+a:visited {
+	color: #8C1515;
+}
+
+.entry-content a,
+.entry-meta a, 
+.comment-content a {
+	color: #8C1515;
+}
+
+.entry-content a:hover, 
+.comment-content a:hover,
+.navigation a:hover {
+	color: #DE1515;
+}
+
+.widget a,
+.widget a:hover,
+.widget a:active,
+.widget a:visited {
+	color: #8C1515;
+}
+
+.site-footer .widget a,
+.site-footer .widget a:hover,
+.site-footer .widget a:active,
+.site-footer .widget a:visited {
+	color: #FFFFFF;
+	opacity: 0.75;
+}
+
+.nav-menu li,
+.nav-menu li a,
+.nav-menu ul ul.children li,
+.nav-menu ul ul.children li a {
+	color: #FFFFFF;
+}
+
+.nav-menu li:hover > a, 
+.nav-menu li a:hover, 
+.nav-menu li:focus > a, 
+.nav-menu li a:focus {
+    background-color: #585754;
+}
+
+.nav-menu .sub-menu, 
+.nav-menu .children {
+	background-color: #585754;
+}
+
+ul.nav-menu ul a:hover, 
+.nav-menu ul ul a:hover, 
+ul.nav-menu ul a:active, 
+.nav-menu ul ul a:active,
+ul.nav-menu ul a:focus, 
+.nav-menu ul ul a:focus {
+    background-color: #BC360A;
+}
+
+.nav-menu .current_page_item > a, 
+.nav-menu .current_page_ancestor > a, 
+.nav-menu .current-menu-item > a, 
+.nav-menu .current-menu-ancestor > a {
+	color: #999999;
+}
+
+.nav-menu ul {
+	background: #2E2D29;;
+}
+
+.navbar {
+	color: #FFFFFF;
+	background: #2E2D29;
+	box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3) inset, 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.error404 .page-wrapper {
+	background: #FFFFFF;
+}
+
+.home-content {
+	box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3) inset, 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.home-content .hentry {
+	background: #DAD7CB;
+}
+
+.site-footer .sidebar-container {
+	background: #8C1515;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3) inset, 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.site-header .search-field {
+	background-image: url('images/search-icon.png') !important;
+}
+
+body.home header.site-header {
+	background: #000000 !important;
+}
+
+footer.site-footer {
+	background: #DAD7CB;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3) inset, 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+button:hover, 
+button:focus, 
+input[type="submit"]:hover, 
+input[type="button"]:hover, 
+input[type="reset"]:hover, 
+input[type="submit"]:focus, 
+input[type="button"]:focus, 
+input[type="reset"]:focus {
+    background: linear-gradient(to bottom, #BE1515 0%, #AE1515 100%) repeat scroll 0% 0% transparent;
+}
+
+button, 
+input[type="submit"], 
+input[type="button"], 
+input[type="reset"] {
+    background: linear-gradient(to bottom, #AE1515 0%, #8C1515 100%) repeat scroll 0% 0% transparent;
+    border-color: -moz-use-text-color -moz-use-text-color #720000;
+    border-color: #720000;
+}
+
+#site-title-wrapper {
+	background: #BC360A;
+	color: #FFFFFF;
+	opacity: 0.85;
+}
+
+#site-description-wrapper {
+	background: #BC360A;
+	color: #FFFFFF;
+	opacity: 0.85;
+}
+
+@media (max-width: 643px) {
+	button.menu-toggle,
+	button.menu-toggle:hover,
+	button.menu-toggle:active,
+	button.menu-toggle:visited {
+		color: #FFFFFF !important;
+	}
+
+ 	.toggled-on .nav-menu li > ul a,
+ 	.toggled-on .nav-menu li:hover > a,
+	.toggled-on .nav-menu .children a {
+		color: #FFFFFF !important;
+	}
+
+	.toggled-on .nav-menu > li a:hover, 
+	.toggled-on .nav-menu > ul a:hover,
+	.toggled-on .nav-menu > li a:active, 
+	.toggled-on .nav-menu > ul a:active,
+	.toggled-on .nav-menu > li a:focus, 
+	.toggled-on .nav-menu > ul a:focus {
+		background-color: #BC360A !important;
+	}
+
+	.menu-main-menu-container {
+		background: #585754;
+	}
+}
+
+/* 
+ * Typography
+ * Using fonts from Stanford web identity.
+ * Sources Sans Pro is already set as the
+ * secondary font in the parent theme. 
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: "Crimson Text", Georgia, serif;
+    line-height: 1.3;
+}
+
+/* 
+ * Miscellaneous 
+ */
+
+.google_map {
+	width: 100%;
+}
+
+.plain_list {
+	padding: 0px;
+	list-style-type: none;
+}
+
+.profile_pic {
+	float: left;
+	margin-right: 20px;
+	border-radius: 64px;
+}
+
+#officers_list li {
+	display: table;
+	height: 160px;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+#officers_list li .descrip {
+	display: table-cell;
+	vertical-align: middle;
+}
