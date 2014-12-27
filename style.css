@@ -147,6 +147,17 @@ body.home .site-title {
 	padding: 5px 10px 5px 10px;
 }
 
+#sponsor-table,
+#sponsor-table td {
+	border: 0px;
+}
+
+#sponsor-table td {
+	height: 150px;
+	width: 33%;
+	text-align: center;
+}
+
 @media (max-width: 1040px) {
 	#home-events {
 		float: none;
