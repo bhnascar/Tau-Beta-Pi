@@ -30,7 +30,7 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 	<?php if ( is_front_page() ) : ?>
-	<script src="/wp-content/themes/taubetapi/scripts/jquery.backstretch.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri() ?>/scripts/jquery.backstretch.min.js"></script>
 	<?php endif; ?>
 </head>
 
