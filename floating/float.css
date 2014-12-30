@@ -1,0 +1,12 @@
+.floating-title {
+  position: relative;
+  z-index: 2;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0px;
+  display: block;
+}
