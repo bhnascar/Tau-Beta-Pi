@@ -65,7 +65,7 @@ get_header(); ?>
 						</div>
 				    </div>
 					<?php endforeach; ?>
-					<a href="/news"><h3>See more +</h3></a>
+					<a href="news"><h3>See more +</h3></a>
 				</div>
 			</div>
 		</div><!-- #home-dynamic-content -->
