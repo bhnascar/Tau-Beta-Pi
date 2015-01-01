@@ -2,11 +2,11 @@
   position: relative;
   z-index: 2;
   padding-left: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .fixed-top {
   position: fixed;
-  top: 0px;
+  top: 30px;
   display: block;
 }

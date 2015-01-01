@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
 
   $(window).scroll(function() {
     if (pos - $(window).scrollTop() - title.outerHeight() > 0) {
-      title.css('top', 0);
+      title.css('top', 30);
       title.addClass('fixed-top');
     } else {
       title.css('top', -title.outerHeight());
