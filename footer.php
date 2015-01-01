@@ -13,9 +13,9 @@
 		</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
-				<img alt="Tau Beta Pi" src="<?php echo wp_upload_dir()['baseurl']; ?>/2014/12/tbp_logo.png" />
-				<img alt="California Gamma" src="<?php echo wp_upload_dir()['baseurl']; ?>/2014/11/california_gamma_logo.png" />
-				<img alt="Stanford Engineering" src="<?php echo wp_upload_dir()['baseurl']; ?>/2014/11/stanford_engineering.png" />
+				<img alt="Tau Beta Pi" src="<?php echo get_stylesheet_directory_uri() ?>/images/logos/tbp_logo.png" />
+				<img alt="California Gamma" src="<?php echo get_stylesheet_directory_uri() ?>/images/logos/california_gamma_logo.png" />
+				<img alt="Stanford Engineering" src="<?php echo get_stylesheet_directory_uri() ?>/images/logos/stanford_engineering.png" />
 			</div>
 			<?php get_sidebar( 'main' ); ?>
 			<div class="copyright-info">© 2013-2014, TBP California Gamma at Stanford University</div>
