@@ -9,6 +9,7 @@
 */
  
 @import url("../twentythirteen/style.css");
+@import url("./floating/float.css");
 
 /* 
  * Layout changes 
@@ -64,7 +65,7 @@
 	height: 45px;
 	position: fixed;
 	top: 0px;
-	z-index: 1;
+	z-index: 10;
 }
 
 .nav-menu .children,
@@ -102,10 +103,6 @@ body.home header.site-header {
 body.home header.site-header .home-link {
 	text-align: center;
 	height: 100%;
-}
-
-body.home .site-title {
-	padding-top: 500px;
 }
 
 #home-dynamic-content {

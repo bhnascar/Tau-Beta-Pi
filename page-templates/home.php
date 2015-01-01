@@ -47,20 +47,19 @@ get_header(); ?>
 					$args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
 					$postslist = get_posts( $args );
 					foreach ($postslist as $post) :  setup_postdata($post); ?> 
-				    <div>
-				    	<div class="home-entry-img">
-					    	<?php 
-					    	if ( has_post_thumbnail() ) : ?>
-					    		<?php the_post_thumbnail("thumbnail"); ?> 
-					    	<?php else : ?>
-					    		<img alt="None" src="/wp-content/themes/taubetapi/images/placeholder.png" />
-					    	<?php endif; ?>
-				    	</div>
-				    	<div class="home-entry-descrip">
-					        <header class="home-entry-header">
-					        	<h3 class="home-entry-title"><a href="<?php Echo get_permalink(); ?>"><?php the_title(); ?></a></h3>  
-					        </header><!-- .entry-header -->
-					        <div class="home-entry-summary">
+					<div>
+						<div class="home-entry-img">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail("thumbnail"); ?> 
+							<?php else : ?>
+								<img alt="None" src="<?php echo get_stylesheet_directory_uri() ?>/images/placeholder.png" />
+							<?php endif; ?>
+						</div>
+						<div class="home-entry-descrip">
+						<header class="home-entry-header">
+							<h3 class="home-entry-title"><a href="<?php Echo get_permalink(); ?>"><?php the_title(); ?></a></h3>  
+						</header><!-- .entry-header -->
+							<div class="home-entry-summary">
 								<?php the_excerpt(); ?>
 							</div><!-- .entry-summary -->
 						</div>
