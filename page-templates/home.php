@@ -44,7 +44,7 @@ get_header(); ?>
 				<div id="home-news">
 					<h2>Announcements</h2>
 					<?php
-					$args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'date' );
+					$args = array( 'numberposts' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
 					$postslist = get_posts( $args );
 					foreach ($postslist as $post) :  setup_postdata($post); ?> 
 					<div>

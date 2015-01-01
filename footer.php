@@ -28,11 +28,11 @@
 	<!-- Header slideshow -->
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".site-header").backstretch(["<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner1.png", 
-										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner2.png", 
-										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner3.png", 
-										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner4.png",
-										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner5.png"
+		$(".site-header").backstretch(["<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner1.jpg", 
+										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner2.jpg", 
+										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner3.jpg", 
+										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner4.jpg",
+										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner5.jpg"
 										], {duration: 5000, fade: 750});
 	});
 	</script> 
