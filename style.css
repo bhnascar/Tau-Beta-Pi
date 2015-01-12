@@ -94,6 +94,7 @@ header {
 /* Accounts for the menu bar */
 body {
 	margin-top: 45px;
+	min-width: 340px;
 }
 
 body.logged-in, body.admin-bar {
