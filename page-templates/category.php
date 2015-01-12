@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name:  Home
+* Template Name: Category
 *
 * @package WordPress
 * @subpackage Twenty_Thirteen
