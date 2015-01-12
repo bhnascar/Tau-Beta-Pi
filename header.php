@@ -39,12 +39,11 @@
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				<div class="floating-title">
+					<h1 class="site-title"><span id="site-title-wrapper"><?php bloginfo( 'name' ); ?></span></h1>
+					<h2 class="site-description"><span id="site-description-wrapper"><?php bloginfo( 'description' ); ?></span></h2>
+				</div>
 			</a>
-
-			<div class="floating-title">
-				<h1 class="site-title"><span id="site-title-wrapper"><?php bloginfo( 'name' ); ?></span></h1>
-				<h2 class="site-description"><span id="site-description-wrapper"><?php bloginfo( 'description' ); ?></span></h2>
-			</div>
 
 			<div id="navbar" class="navbar">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">

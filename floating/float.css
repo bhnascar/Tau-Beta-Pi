@@ -1,12 +1,16 @@
 .floating-title {
-  position: relative;
-  z-index: 2;
-  padding-left: 30px;
-  padding-bottom: 30px;
+	z-index: 2;
+ 	position: relative;
+ 	left: 50%;
+ 	width: 100%;
+ 	margin-left: -50%;
 }
 
 .fixed-top {
-  position: fixed;
-  top: 30px;
-  display: block;
+	display: block;
+ 	position: fixed;
+ 	top: 0px;
+ 	left: 50%;
+ 	width: 100%;
+ 	margin-left: -50%;
 }

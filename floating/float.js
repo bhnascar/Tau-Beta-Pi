@@ -1,19 +1,30 @@
 jQuery(document).ready(function() {
   var $ = jQuery;
-  var title = $('.floating-title');
-  var main = $('.site-main');
 
-  title.addClass('fixed-top');
-  mainTop = main.position().top;
-  var pos = mainTop - title.position().top
+  var calibrate = function() {
+    var title = $('.floating-title');
+    var main = $('.site-main');
+    var navbar = $('.navbar');
 
-  $(window).scroll(function() {
-    if (pos - $(window).scrollTop() - title.outerHeight() > 0) {
-      title.css('top', 30);
-      title.addClass('fixed-top');
-    } else {
-      title.css('top', -title.outerHeight());
-      title.removeClass('fixed-top');
+    title.addClass('fixed-top');
+    mainTop = main.position().top;
+    var pos = mainTop - title.position().top
+    var margin = 50;
+
+    var fixOffset = function() {
+      if (pos - $(window).scrollTop() - title.outerHeight() - margin > 0) {
+        title.addClass('fixed-top');
+        title.css('top', 0);
+      } else {
+        title.removeClass('fixed-top');
+        title.css('top', pos - title.outerHeight() - navbar.outerHeight() - margin);
+      }
     }
-  });
+
+    $(window).scroll(fixOffset);
+    window.onload = fixOffset;
+  };
+
+  calibrate();
+  $(window).resize(calibrate);
 });
