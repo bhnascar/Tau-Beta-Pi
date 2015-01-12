@@ -15,6 +15,12 @@
  * Layout changes 
  */
 
+.category-listing {
+	overflow: hidden;
+    display: inline-block;
+    display: block;
+}
+
 .copyright-info {
     margin: 0px auto;
     padding: 0px 0px 30px 0px;
