@@ -71,6 +71,23 @@ function voodoo_add_headers () {
 } // end of main function
 add_action ('after_setup_theme', 'voodoo_add_headers', 1);
 
+// Give me a slug form title
+function sluggify( $url ) {
+    # Prep string with some basic normalization
+    $url = strtolower($url);
+    $url = strip_tags($url);
+    $url = stripslashes($url);
+    $url = html_entity_decode($url);
+    # Remove quotes (can't, etc.)
+    $url = str_replace('\'', '', $url);
+    # Replace non-alpha numeric with hyphens
+    $match = '/[^a-z0-9]+/';
+    $replace = '-';
+    $url = preg_replace($match, $replace, $url);
+    $url = trim($url, '-');
+    return $url;
+}
+
 /* Enable GZIP compression for faster load times */
 
 if(extension_loaded("zlib") && (ini_get("output_handler") != "ob_gzhandler"))

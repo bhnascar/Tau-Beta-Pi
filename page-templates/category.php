@@ -29,7 +29,8 @@ get_header(); ?>
 					<div class="entry-content">
 						<?php the_content(); ?>
 						<?php
-						$args = array( 'numberposts' => 10, 'order'=> 'DESC', 'orderby' => 'date', 'category_name' => get_the_title() );
+						$cat = get_category_by_slug( sluggify( get_the_title() ) );
+						$args = array( 'numberposts' => 10, 'order'=> 'DESC', 'orderby' => 'date', 'category' => $cat->term_id );
 						$postslist = get_posts( $args );
 						foreach ($postslist as $post) :  setup_postdata($post); ?> 
 						<div class="category-listing">
