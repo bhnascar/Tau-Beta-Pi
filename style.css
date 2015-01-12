@@ -17,8 +17,7 @@
 
 .copyright-info {
     margin: 0px auto;
-    max-width: 1040px;
-    padding: 30px 0px;
+    padding: 0px 0px 30px 0px;
     width: 100%;
 }
 
@@ -275,6 +274,11 @@ a:visited {
 	color: #8C1515;
 }
 
+.copyright-info {
+	color: #FFFFFF;
+    background: #8C1515;
+}
+
 .entry-content a,
 .entry-meta a, 
 .comment-content a {
@@ -352,7 +356,8 @@ ul.nav-menu ul a:focus,
 }
 
 .home-content {
-	box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3) inset, 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-top: 1px solid #D0D0D0;
+	border-bottom: 1px solid #D0D0D0;
 }
 
 .home-content .hentry {
@@ -361,7 +366,6 @@ ul.nav-menu ul a:focus,
 
 .site-footer .sidebar-container {
 	background: #8C1515;
-	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3) inset, 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .site-header .search-field {
@@ -374,7 +378,7 @@ body.home header.site-header {
 
 footer.site-footer {
 	background: #DAD7CB;
-	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3) inset, 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-top: 1px solid #D0D0D0;
 }
 
 button:hover, 
