@@ -18,7 +18,7 @@
 				<img alt="Stanford Engineering" src="<?php echo get_stylesheet_directory_uri() ?>/images/logos/stanford_engineering.png" />
 			</div>
 			<?php get_sidebar( 'main' ); ?>
-			<div class="copyright-info">© 2013-2014, TBP California Gamma at Stanford University</div>
+			<div class="copyright-info">© 2013-2014, TBP California Gamma Chapter @ Stanford University</div>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
