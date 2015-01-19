@@ -23,10 +23,11 @@ add_action( 'widgets_init', 'voodoo_widgets_init' );
 
 /* Add "Read more..." link to post previews. */
 
-function new_excerpt_more( $more ) {
-	return '... <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+function new_excerpt_more($more) {
+    global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read more...</a>';
 }
-add_filter( 'excerpt_more', 'new_excerpt_more' );
+add_filter('excerpt_more', 'new_excerpt_more');
 
 /* Override default headers */
 
