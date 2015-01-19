@@ -43,7 +43,7 @@ get_header(); ?>
 							</div>
 							<div class="home-entry-descrip">
 								<header class="home-entry-header">
-									<h3 class="home-entry-title"><a href="<?php Echo get_permalink(); ?>"><?php the_title(); ?></a></h3>  
+									<h3 class="home-entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>  
 								</header><!-- .entry-header -->
 								<div class="home-entry-summary">
 									<?php the_excerpt(); ?>
