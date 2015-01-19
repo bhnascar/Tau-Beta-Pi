@@ -156,7 +156,7 @@ body.home header.site-header .home-link .site-title {
 
 #site-title-wrapper {
 	display: inline-block;
-	padding: 10px 10px 0px;
+	padding: 5px 5px 0px;
 }
 
 #site-description-wrapper {
@@ -195,7 +195,7 @@ body.home header.site-header .home-link .site-title {
 	}
 
 	body.logged-in {
-		margin-top: -5px !important;
+		margin-top: -1px !important;
 	}
 }
 
