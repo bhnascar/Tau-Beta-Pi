@@ -23,10 +23,10 @@ add_action( 'widgets_init', 'voodoo_widgets_init' );
 
 /* Add "Read more..." link to post previews. */
 
-function modify_read_more_link() {
-	return '<a class="more-link" href="' . get_permalink() . '">Read more</a>';
+function new_excerpt_more( $more ) {
+	return '... <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
 }
-add_filter( 'the_content_more_link', 'modify_read_more_link' );
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 /* Override default headers */
 
