@@ -83,6 +83,10 @@
 	max-width: 100%;
 }
 
+.screen-reader-text {
+	display: none;
+}
+
 p.form-allowed-tags {
 	display: none;
 }
