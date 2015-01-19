@@ -156,7 +156,7 @@ body.home header.site-header .home-link .site-title {
 
 #site-title-wrapper {
 	display: inline-block;
-	padding: 5px 5px 0px;
+	padding: 10px 10px 0px;
 }
 
 #site-description-wrapper {
@@ -222,6 +222,10 @@ body.home header.site-header .home-link .site-title {
 	#content .entry-header, 
 	#content .entry-content {
 		padding: 0px;
+	}
+
+	#site-title-wrapper {
+		padding: 5px 5px 0px;
 	}
 
 	#wpadminbar {
