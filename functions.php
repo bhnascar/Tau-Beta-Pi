@@ -89,6 +89,17 @@ function sluggify( $url ) {
     return $url;
 }
 
+/* Get post by name - utility function
+ * Creds to http://stackoverflow.com/questions/14989066/
+ */
+
+function get_post_by_name($post_name, $post_type = 'post', $output = OBJECT) {
+    global $wpdb;
+    $post = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type= %s", $post_name, $post_type ));
+    if ( $post ) return get_post($post, $output);
+    return null;
+}
+
 /* Enable GZIP compression for faster load times */
 
 if(extension_loaded("zlib") && (ini_get("output_handler") != "ob_gzhandler"))

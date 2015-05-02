@@ -33,7 +33,9 @@
 										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner3.jpg", 
 										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner4.jpg",
 										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner5.jpg",
-										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner6.jpg"
+										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner6.jpg",
+										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner7.jpg",
+										"<?php echo get_stylesheet_directory_uri() ?>/images/banners/banner8.jpg"
 										], {duration: 5000, fade: 750});
 	});
 	</script> 

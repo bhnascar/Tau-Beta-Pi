@@ -34,6 +34,11 @@ get_header(); ?>
 
 		<div id="home-dynamic-content" class="clearfix">
 			<div id="home-dynamic-content-wrapper" class="clearfix">
+				<?php
+				$content_post = get_post_by_name('feature'); ?>
+				<?php if($content_post) : ?>
+				<div id="home-feature"><?php echo $content_post->post_content; ?></div>
+				<?php endif; ?>
 				<div id="home-events">
 					<h2>Events</h2>
 					<?php
