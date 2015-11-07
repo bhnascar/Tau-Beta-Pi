@@ -1,5 +1,5 @@
 <?php
- 
+
 /* Override sidebar initiation to include personal sidebar */
 
 remove_action( 'widgets_init', 'twentythirteen_widgets_init' );
@@ -71,6 +71,13 @@ function voodoo_add_headers () {
 	)); // end of array
 } // end of main function
 add_action ('after_setup_theme', 'voodoo_add_headers', 1);
+
+/* Customize Excerpt length */
+
+function custom_excerpt_length( $length ) {
+return 30;
+}
+add_filter( ‘excerpt_length’, ‘custom_excerpt_length’, 999 );
 
 // Give me a slug form title
 function sluggify( $url ) {
