@@ -7,12 +7,12 @@
  Template:       twentythirteen
  Version:        1.0.0
 */
- 
+
 @import url("../twentythirteen/style.css");
 @import url("./floating/float.css");
 
-/* 
- * Layout changes 
+/*
+ * Layout changes
  */
 
 .category-listing {
@@ -143,7 +143,7 @@ body.home header.site-header .home-link .site-title {
 #home-events {
 	float: right;
 }
-	
+
 
 #gce_widget-2 {
 	width: 300px;
@@ -219,7 +219,7 @@ body.home header.site-header .home-link .site-title {
 }
 
 @media (max-width: 643px) {
-	#content .entry-header, 
+	#content .entry-header,
 	#content .entry-content {
 		padding: 0px;
 	}
@@ -255,7 +255,19 @@ body.home header.site-header .home-link .site-title {
 }
 
 /*
- * Clearfix 
+ * Images
+ * Text wrap
+ */
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/*
+ * Clearfix
  * For floating 'Events' and 'Announcements' section
  * on the home page.
  */
@@ -265,11 +277,11 @@ body.home header.site-header .home-link .site-title {
   content: "";
   display: table;
 }
- 
+
 .clearfix:after {
   clear: both;
 }
- 
+
 .clearfix {
   zoom: 1; /* ie 6/7 */
 }
@@ -278,9 +290,9 @@ footer {
 	clear: both;
 }
 
-/* 
- * Colors 
- */ 
+/*
+ * Colors
+ */
 
 a,
 a:hover,
@@ -295,12 +307,12 @@ a:visited {
 }
 
 .entry-content a,
-.entry-meta a, 
+.entry-meta a,
 .comment-content a {
 	color: #8C1515;
 }
 
-.entry-content a:hover, 
+.entry-content a:hover,
 .comment-content a:hover,
 .navigation a:hover {
 	color: #DE1515;
@@ -328,30 +340,30 @@ a:visited {
 	color: #FFFFFF;
 }
 
-.nav-menu li:hover > a, 
-.nav-menu li a:hover, 
-.nav-menu li:focus > a, 
+.nav-menu li:hover > a,
+.nav-menu li a:hover,
+.nav-menu li:focus > a,
 .nav-menu li a:focus {
     background-color: #585754;
 }
 
-.nav-menu .sub-menu, 
+.nav-menu .sub-menu,
 .nav-menu .children {
 	background-color: #585754;
 }
 
-ul.nav-menu ul a:hover, 
-.nav-menu ul ul a:hover, 
-ul.nav-menu ul a:active, 
+ul.nav-menu ul a:hover,
+.nav-menu ul ul a:hover,
+ul.nav-menu ul a:active,
 .nav-menu ul ul a:active,
-ul.nav-menu ul a:focus, 
+ul.nav-menu ul a:focus,
 .nav-menu ul ul a:focus {
     background-color: #BC360A;
 }
 
-.nav-menu .current_page_item > a, 
-.nav-menu .current_page_ancestor > a, 
-.nav-menu .current-menu-item > a, 
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
 	color: #999999;
 }
@@ -396,20 +408,20 @@ footer.site-footer {
 	border-top: 1px solid #D0D0D0;
 }
 
-button:hover, 
-button:focus, 
-input[type="submit"]:hover, 
-input[type="button"]:hover, 
-input[type="reset"]:hover, 
-input[type="submit"]:focus, 
-input[type="button"]:focus, 
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
 input[type="reset"]:focus {
     background: linear-gradient(to bottom, #BE1515 0%, #AE1515 100%) repeat scroll 0% 0% transparent;
 }
 
-button, 
-input[type="submit"], 
-input[type="button"], 
+button,
+input[type="submit"],
+input[type="button"],
 input[type="reset"] {
     background: linear-gradient(to bottom, #AE1515 0%, #8C1515 100%) repeat scroll 0% 0% transparent;
     border-color: -moz-use-text-color -moz-use-text-color #720000;
@@ -443,11 +455,11 @@ input[type="reset"] {
 		color: #FFFFFF !important;
 	}
 
-	.toggled-on .nav-menu > li a:hover, 
+	.toggled-on .nav-menu > li a:hover,
 	.toggled-on .nav-menu > ul a:hover,
-	.toggled-on .nav-menu > li a:active, 
+	.toggled-on .nav-menu > li a:active,
 	.toggled-on .nav-menu > ul a:active,
-	.toggled-on .nav-menu > li a:focus, 
+	.toggled-on .nav-menu > li a:focus,
 	.toggled-on .nav-menu > ul a:focus {
 		background-color: #BC360A !important;
 	}
@@ -457,11 +469,11 @@ input[type="reset"] {
 	}
 }
 
-/* 
+/*
  * Typography
  * Using fonts from Stanford web identity.
  * Sources Sans Pro is already set as the
- * secondary font in the parent theme. 
+ * secondary font in the parent theme.
  */
 
 h1, h2, h3, h4, h5, h6 {
@@ -470,8 +482,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3;
 }
 
-/* 
- * Miscellaneous 
+/*
+ * Miscellaneous
  */
 
 .google_map {
