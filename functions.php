@@ -27,7 +27,7 @@ function new_excerpt_more($more) {
     global $post;
 	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read more...</a>';
 }
-add_filter('excerpt_more', 'new_excerpt_more');
+add_filter('excerpt_more', 'custom_excerpt_length');
 
 /* Override default headers */
 
@@ -72,12 +72,6 @@ function voodoo_add_headers () {
 } // end of main function
 add_action ('after_setup_theme', 'voodoo_add_headers', 1);
 
-/* Customize Excerpt length */
-
-function custom_excerpt_length( $length ) {
-return 30;
-}
-add_filter( ‘excerpt_length’, ‘custom_excerpt_length’, 999 );
 
 // Give me a slug form title
 function sluggify( $url ) {
@@ -106,6 +100,13 @@ function get_post_by_name($post_name, $post_type = 'post', $output = OBJECT) {
     if ( $post ) return get_post($post, $output);
     return null;
 }
+
+/* Customize Excerpt length */
+
+function custom_excerpt_length( $length ) {
+return 30;
+}
+add_filter( ‘excerpt_length’, ‘custom_excerpt_length’, 999 );
 
 /* Enable GZIP compression for faster load times */
 
