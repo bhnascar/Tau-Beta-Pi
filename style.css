@@ -272,6 +272,23 @@ figcaption {
 }
 
 /*
+ * Authors of Posts
+ * Remove author
+ */
+
+.meta-sep {
+	display:none;
+}
+
+.vcard {
+	display:none;
+}
+
+.author {
+	display:none;
+}
+
+/*
  * Clearfix
  * For floating 'Events' and 'Announcements' section
  * on the home page.
