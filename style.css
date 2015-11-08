@@ -272,23 +272,6 @@ figcaption {
 }
 
 /*
- * Authors of Posts
- * Remove author
- */
-
-.meta-sep {
-	display:none;
-}
-
-.vcard {
-	display:none;
-}
-
-.author {
-	display:none;
-}
-
-/*
  * Clearfix
  * For floating 'Events' and 'Announcements' section
  * on the home page.
@@ -533,4 +516,16 @@ h1, h2, h3, h4, h5, h6 {
 #officers_list li .descrip {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+/*
+ * Authors of Posts
+ * Remove author
+ */
+
+.entry-author-link,
+.entry-permalink,
+.entry-date,
+.entry-meta {
+	display:none;
 }
