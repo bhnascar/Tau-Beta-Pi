@@ -67,6 +67,11 @@ function voodoo_add_headers () {
 			'url' => '%2$s/images/headers/header_6.png',
 			'thumbnail_url' => '%2$s/images/headers/header_6_thumbnail.png',
 		'description' => __( 'Header 6', 'taubetapi' )
+		),
+		'header7' => array(
+			'url' => '%2$s/images/headers/header_7.png',
+			'thumbnail_url' => '%2$s/images/headers/header_7_thumbnail.png',
+		'description' => __( 'Header 7', 'taubetapi' )
 		)
 	)); // end of array
 } // end of main function
