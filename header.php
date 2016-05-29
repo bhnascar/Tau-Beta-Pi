@@ -25,8 +25,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href="//fonts.googleapis.com/css?family=Crimson+Text:400italic,400,600italic,600,700italic,700" rel="stylesheet" type="text/css">
-	<link rel="icon" href="http://tbp.stanford.edu/" type="image/x-icon" />
-	<link rel="shortcut icon" href="http://tbp.stanford.edu/" type="image/x-icon" />
+	<link rel="icon" href="http://tbp.stanford.edu/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://tbp.stanford.edu/favicon.ico" type="image/x-icon" />
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
